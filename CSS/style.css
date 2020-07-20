@@ -99,8 +99,7 @@ body {
     align-items:center;
     padding:5rem;
     min-height:400px;
-    background-color:rgb(20, 18, 18);
-    color:white;
+    background-color:rgba(204, 199, 199, 0.623);
 }
 
 /* Contact section */
@@ -161,8 +160,25 @@ body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+
+
 /* footer section */
 
 .footer-section{
-    padding:2%;
+    color:white;
+    background-color:rgb(20, 18, 18);
+    padding-top:10px;;
+}
+.social-media{
+    border-top:2px groove rgba(128, 128, 128, 0.315);
+    border-bottom:2px groove rgba(128, 128, 128, 0.315);
+    padding:20px;
+}
+.social-media-icons{
+    font-size:24px;
+    margin:0 1.2rem;
+}
+.copyright{
+    padding:10px;
 }
