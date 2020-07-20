@@ -1,53 +1,87 @@
+/* custom colors */
 .text-orange{color:#ff6633;}
 .text-green{color:#009933;}
 .text-blue{color:#00aaff;}
 
+
+/* smooth scrolling */
+
 html{
     scroll-behavior: smooth;
 }
+
+
+/* scrollspy */
+
 body {
     position: relative;
   }
-.home-section-wrap{
+
+
+/* navigation */
+
+.navbar{
+    background-color:rgb(20, 18, 18);
+    box-shadow: 0 2px 4px rgba(255,255,255,0.5);
+}
+
+
+/* header section */
+
+.header-section-wrap{
     background: url(../img/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
 }
-.home-section{
-    padding-top: 200px;
-    padding-bottom: 100px;
+
+.header-section{
+    padding-top: 10rem;
+    padding-bottom: 3.5rem;
     width:100%;
-    min-height:700px;
+    min-height:650px;
     background-color:rgba(0,0,0,0.7);
 }
+
 .login-form{
     outline:2px groove white;
 }
+
 .search-bar{
     background-color: transparent !important;
-    border:0;
+    border:none;
+}
+.search-bar:focus {
+    color: #aab1b8;
+    background-color: #fff;
+    border-color: transparent !important;
+    outline: 0;
+    box-shadow: none !important;
 }
 .search-btn{
     border-radius: 0;
 }
+
 .search-icon{
     height:100%;
     width:100%;
 }
-.navbar{
-    background-color:rgb(20, 18, 18);
-    box-shadow: 0 2px 4px rgba(255,255,255,0.5);
-}
-.material-icons-md{
-    font-size:100px;
-}
+
+
+/* Explore section */
+
 .explore{
-    padding:100px 50px;
+    padding:5rem 2.5rem;
 }
+
 .explore-text{
     padding:1.2rem;
 }
+
+.material-icons-md{
+    font-size:100px;
+}
+
 @media(max-width:768px){
     .explore-text{
         text-align:center;
@@ -57,13 +91,9 @@ body {
     }
 }
 
-.signup-section{
-    position:fixed;
-    top:0px;
-    left:0px;
-    width:100%;
-    height:100%;
-}
+
+/* Community section */
+
 .community-section{
     display:flex;
     flex-direction:column;
@@ -74,13 +104,66 @@ body {
     background-color:rgb(20, 18, 18);
     color:white;
 }
+
+/* Contact section */
+
 .contact-section{
-    padding-top:5rem;
-    padding-bottom:2.5rem;
+    padding-top:3rem;
+    padding-bottom:1.5rem;
 }
+@media(max-width:768px){
+    .contact-section{
+        padding-top:2rem;
+        padding-bottom:1.5rem;
+    }
+}
+
 .contact-form{
     padding:2.5rem;
 }
+
+.contact-form .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,.25);
+}
+
+/* Signup section */
+
+.signup-section{
+    position:fixed;
+    display:none;
+    padding-top:5rem;
+    overflow:auto;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    color:white;
+    background:rgba(20, 18, 18,0.8);
+    z-index:999;
+}
+
+.signup-close{
+    position:fixed;
+    top:5rem;
+    right:1rem;
+    color:white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.signup-section::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .signup-section {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+/* footer section */
 
 .footer-section{
     padding:2%;
